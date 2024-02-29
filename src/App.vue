@@ -1,11 +1,15 @@
 <script>
     import AppNav from './components/AppNav.vue';
+    import AppContent from './components/AppContent.vue';
+    import AppBlueBundles from './components/AppBlueBundles.vue';
 
     export default{
 
     
     components: {
         AppNav,
+        AppContent,
+        AppBlueBundles
     },
 
 }
@@ -14,6 +18,8 @@
 <template>
     
     <AppNav></AppNav>
+    <AppContent></AppContent>
+    <AppBlueBundles></AppBlueBundles>
 
 </template>
 
