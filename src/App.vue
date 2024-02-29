@@ -3,6 +3,7 @@
     import AppContent from './components/AppContent.vue';
     import AppBlueBundles from './components/AppBlueBundles.vue';
     import AppMain from './components/AppMain.vue';
+    import AppFooter from './components/AppFooter.vue';
 
     export default{
 
@@ -11,7 +12,8 @@
         AppNav,
         AppContent,
         AppBlueBundles,
-        AppMain
+        AppMain,
+        AppFooter
     },
 
 }
@@ -23,6 +25,7 @@
     <AppContent></AppContent>
     <AppBlueBundles></AppBlueBundles>
     <AppMain></AppMain>
+    <AppFooter></AppFooter>
 
 </template>
 

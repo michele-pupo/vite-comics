@@ -48,6 +48,7 @@
         height: 155px;
         display: flex;
         align-items: center;
+        z-index: 1;
 
         #blue-bundles{
             width: 1170px;

@@ -92,6 +92,7 @@
                 width: 100%;
                 position: relative;
                 top: -100px;
+                z-index: 0;
             }
         }
 
