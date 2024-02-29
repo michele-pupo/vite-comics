@@ -59,7 +59,7 @@
     <div id="bg-image">
         <div id="links-image">
             <div id="links-list-title">
-                <div v-for="linkList in links" id="links-list">
+                <div v-for="linkList in links">
                     <h3>{{linkList.title}}</h3>
                     <ul>
                         <li v-for="currentLink in linkList.list">
@@ -87,32 +87,34 @@
             display: flex;
             justify-content: space-between;
 
-
-            img{
-                width: 100%;
+            #image-logo{
                 position: relative;
-                top: -100px;
-                z-index: 0;
+
+                img{
+                    width: 100%;
+                    position: relative;
+                    top: -100px;
+                    z-index: 0;
+                }
             }
+            
         }
 
         #links-list-title{
             display: flex;
-            column-gap: 20px;
+            gap: 20px;
             
             h3{
-                font-size: 30px;
+                font-size: 25px;
                 text-transform: uppercase;
             }
 
             ul{
-                
                 list-style-type: none;
                 padding: 0px;
-                font-size: 15px;
+                font-size: 10px;
                 color: #959595;
             }
         }
     }
-  
 </style>

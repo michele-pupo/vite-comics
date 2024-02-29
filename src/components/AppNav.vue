@@ -39,6 +39,7 @@
     #navbar{
         background-color: white;
         padding: 20px 0px;
+        z-index: 1;
 
         #container{
             width: 1250px;
