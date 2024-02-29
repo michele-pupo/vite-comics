@@ -20,11 +20,13 @@
    </div>
 </template>
 
-<style>
+<style lang="scss">
     #footer{
         background-color: #303030;
         padding: 30px 0;
-
+        position: absolute;
+        width: 100%;
+       
         #container-footer{
             width: 1250px;
             margin: 0 auto;
@@ -35,7 +37,7 @@
                 text-transform: uppercase;
                 background-color: transparent;
                 border:3px solid #0282f9;
-                padding: 0 20px;
+                padding: 15px;
                 font-size: 20px;
             }
 

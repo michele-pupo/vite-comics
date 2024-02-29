@@ -34,42 +34,51 @@
 <template>
     <div id="container-blue-bundles">
         <div id="blue-bundles">
-            <div id="card" v-for="currentCard in cards">
-                <img :src="currentCard.img" alt="">
-                <h2>{{currentCard.text}}</h2>
+            <div id="blue-cards">
+                <div id="card" v-for="currentCard in cards">
+                    <img :src="currentCard.img" alt="">
+                    <h2>{{currentCard.text}}</h2>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
-<style>
+<style lang="scss">
    #container-blue-bundles{
         background-color: #0282f9;
         height: 155px;
         display: flex;
         align-items: center;
-        z-index: 1;
 
         #blue-bundles{
-            width: 1170px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 17px;
-            
-            #card{
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+           
+            #blue-cards{
+                width: 1170px;
+                margin: 0 auto;
                 display: flex;
+                justify-content: space-between;
+                align-items: center;
                 gap: 17px;
-                height: 55px;
 
-                img{
-                    height: 100%;
-                }
+                #card{
+                    display: flex;
+                    gap: 17px;
+                    height: 55px;
 
-                h2{
-                    font-size: 15px;
-                    text-transform: uppercase;
+                    img{
+                        height: 100%;
+                        display: block;
+                    }
+
+                    h2{
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        display: block;
+                    }
                 }
             }
         }

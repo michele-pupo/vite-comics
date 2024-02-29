@@ -75,9 +75,9 @@
     </div>
 </template>
 
-<style>
+<style lang="scss">
     #bg-image{
-        height: 400px;
+        height: 380px;
         background-image: url(/public/img/footer-bg.jpg);
         background-size: cover;
 
@@ -91,28 +91,26 @@
                 position: relative;
 
                 img{
-                    width: 100%;
                     position: relative;
                     top: -100px;
-                    z-index: 0;
                 }
             }
-            
         }
 
         #links-list-title{
             display: flex;
             gap: 20px;
-            
+
             h3{
                 font-size: 25px;
                 text-transform: uppercase;
+                margin-bottom: 10px;
             }
 
             ul{
                 list-style-type: none;
                 padding: 0px;
-                font-size: 10px;
+                font-size: 15px;
                 color: #959595;
             }
         }

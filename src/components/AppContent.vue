@@ -12,13 +12,14 @@
     </div>
 </template>
 
-<style>
+<style lang="scss">
     #container-content{
         background-color: black;
         padding: 20px 0;
+        
         #content{
-        width: 1250px;
-        margin: 0 auto;
+            width: 1250px;
+            margin: 0 auto;
         }
     }
 </style>

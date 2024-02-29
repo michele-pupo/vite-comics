@@ -35,7 +35,7 @@
   
 </template>
 
-<style>
+<style lang="scss">
     #navbar{
         background-color: white;
         padding: 20px 0px;
@@ -57,6 +57,11 @@
                     text-transform: uppercase;
                     font-weight: bold;
                     color: black;
+                    &:hover{
+                        color: #0282f9;
+                        border-bottom: 8px solid #0282f9;
+                        padding-bottom: 54px;
+                    }
                 }
             }
         }
