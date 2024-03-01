@@ -21,6 +21,8 @@
 </template>
 
 <style lang="scss">
+    @use '../styles/variables' as *;
+
     #footer{
         background-color: #303030;
         padding: 30px 0;
@@ -36,7 +38,7 @@
             button{
                 text-transform: uppercase;
                 background-color: transparent;
-                border:3px solid #0282f9;
+                border:3px solid $primaryColorBlue;
                 padding: 15px;
                 font-size: 20px;
             }
@@ -48,7 +50,7 @@
 
                 h4{
                     text-transform: uppercase;
-                    color: #0282f9;
+                    color: $primaryColorBlue;
                     font-size: 20px;
                 }
             }

@@ -36,6 +36,8 @@
 </template>
 
 <style lang="scss">
+    @use '../styles/variables' as *;
+
     #navbar{
         background-color: white;
         padding: 20px 0px;
@@ -58,8 +60,8 @@
                     font-weight: bold;
                     color: black;
                     &:hover{
-                        color: #0282f9;
-                        border-bottom: 8px solid #0282f9;
+                        color: $primaryColorBlue;
+                        border-bottom: 8px solid $primaryColorBlue;
                         padding-bottom: 54px;
                     }
                 }

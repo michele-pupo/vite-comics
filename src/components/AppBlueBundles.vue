@@ -45,8 +45,10 @@
 </template>
 
 <style lang="scss">
+    @use '../styles/variables' as *;
+
    #container-blue-bundles{
-        background-color: #0282f9;
+        background-color: $primaryColorBlue;
         height: 155px;
         display: flex;
         align-items: center;
