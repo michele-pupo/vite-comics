@@ -1,6 +1,9 @@
 <script>
+    import AppBlueBundles from './AppBlueBundles.vue';
+
     export default{
         name: 'AppMain',
+        components: { AppBlueBundles },
         data() {
             return {
                 links:[
@@ -56,6 +59,7 @@
 </script>
 
 <template>
+    <AppBlueBundles></AppBlueBundles>
     <div id="bg-image">
         <div id="links-image">
             <div id="links-list-title">
@@ -77,7 +81,7 @@
 
 <style lang="scss">
     #bg-image{
-        height: 380px;
+        height: 370px;
         background-image: url(/public/img/footer-bg.jpg);
         background-size: cover;
 
@@ -87,19 +91,19 @@
             display: flex;
             justify-content: space-between;
 
-            #image-logo{
+            img{
                 position: relative;
-
-                img{
-                    position: relative;
-                    top: -100px;
-                }
+                top: -100px;
+                overflow: hidden;
             }
         }
 
         #links-list-title{
             display: flex;
-            gap: 20px;
+            flex-flow: column wrap;
+            align-content: flex-start;
+            gap: 20px 30px;
+            height: 370px;
 
             h3{
                 font-size: 25px;

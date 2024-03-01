@@ -1,7 +1,6 @@
 <script>
     import AppNav from './components/AppNav.vue';
-    import AppContent from './components/AppContent.vue';
-    import AppBlueBundles from './components/AppBlueBundles.vue';
+    import AppJumbotron from './components/AppJumbotron.vue';
     import AppMain from './components/AppMain.vue';
     import AppFooter from './components/AppFooter.vue';
 
@@ -9,8 +8,7 @@
 
     components: {
         AppNav,
-        AppContent,
-        AppBlueBundles,
+        AppJumbotron,
         AppMain,
         AppFooter
     },
@@ -21,8 +19,7 @@
 <template>
     
     <AppNav></AppNav>
-    <AppContent></AppContent>
-    <AppBlueBundles></AppBlueBundles>
+    <AppJumbotron></AppJumbotron>
     <AppMain></AppMain>
     <AppFooter></AppFooter>
 
