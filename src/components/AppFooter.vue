@@ -7,7 +7,7 @@
 <template>
    <div id="footer">
         <div id="container-footer">
-            <button>Sign-up now!</button>
+            <button><span>Sign-up now!</span></button>
             <div id="social">
                 <h4>Follow us</h4>
                 <img src="/public/img/footer-facebook.png" alt="">
@@ -39,8 +39,12 @@
                 text-transform: uppercase;
                 background-color: transparent;
                 border:3px solid $primaryColorBlue;
-                padding: 15px;
-                font-size: 20px;
+                padding: 0px 15px;
+                cursor: pointer;
+
+                span{
+                    font-size: 20px;
+                }
             }
 
             #social{
