@@ -103,7 +103,7 @@
             display: flex;
             flex-flow: column wrap;
             align-content: flex-start;
-            gap: 20px 30px;
+            gap: 20px 50px;
             padding-top: 20px;
             height: 370px;
 

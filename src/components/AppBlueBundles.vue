@@ -48,7 +48,7 @@
     @use '../styles/variables' as *;
 
    #container-blue-bundles{
-        background-color: $primaryColorBlue;
+        background-color: $primaryColor;
         font-family: 'Barlow Condensed', sans-serif;
         height: 155px;
         display: flex;

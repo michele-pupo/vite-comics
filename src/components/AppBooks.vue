@@ -126,7 +126,7 @@
                 position: relative;
                 top: -25px;
                 left: -20px;
-                background-color: $primaryColorBlue;
+                background-color: $primaryColor;
                 padding: 10px 30px;
                 border: transparent;
                 font-size: 28px;

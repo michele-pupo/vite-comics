@@ -61,8 +61,8 @@
                     font-weight: bold;
                     color: black;
                     &:hover{
-                        color: $primaryColorBlue;
-                        border-bottom: 8px solid $primaryColorBlue;
+                        color: $primaryColor;
+                        border-bottom: 8px solid $primaryColor;
                         padding-bottom: 55px;
                     }
                 }

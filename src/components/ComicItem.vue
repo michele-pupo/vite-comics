@@ -31,6 +31,11 @@
         img{
             width: 100%;
             height: 200px;
+            cursor: pointer;
+            &:hover{
+                animation: comic 3s ease infinite;
+            }
+            
         }
 
         h4{
@@ -40,7 +45,7 @@
         }
 
         span{
-            color: $primaryColorBlue;
+            color: $primaryColor;
             text-transform: uppercase;
             font-weight: bold;
             position: relative;
@@ -50,10 +55,25 @@
 
         strong{
             text-transform: uppercase;
-            color: $primaryColorBlue;
+            color: $primaryColor;
             font-size: 15px;
         }
     }
+
+    @keyframes comic {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
    
 </style>
 

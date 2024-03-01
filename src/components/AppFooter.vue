@@ -1,6 +1,33 @@
 <script>
     export default{
         name: 'AppFooter',
+
+        data() {
+            return {
+                socials: [
+                    {
+                        name: 'facebook',
+                        icon: '/img/footer-facebook.png'
+                    },
+                    {
+                        name: 'twitter',
+                        icon: '/img/footer-twitter.png'
+                    },
+                    {
+                        name: 'youtube',
+                        icon: '/img/footer-youtube.png'
+                    },
+                    {
+                        name: 'pinterest',
+                        icon: '/img/footer-pinterest.png'
+                    },
+                    {
+                        name: 'periscope',
+                        icon: '/img/footer-periscope.png'
+                    },
+                ]
+            }
+        },
     }
 </script>
 
@@ -10,11 +37,11 @@
             <button><span>Sign-up now!</span></button>
             <div id="social">
                 <h4>Follow us</h4>
-                <img src="/public/img/footer-facebook.png" alt="">
-                <img src="/public/img/footer-twitter.png" alt="">
-                <img src="/public/img/footer-youtube.png" alt="">
-                <img src="/public/img/footer-pinterest.png" alt="">
-                <img src="/public/img/footer-periscope.png" alt="">
+                <ul>
+                    <li v-for="currentSocial in socials">
+                        <img :src="currentSocial.icon" :alt="currentSocial.name">
+                    </li>
+                </ul>
             </div>
         </div>
    </div>
@@ -38,7 +65,7 @@
             button{
                 text-transform: uppercase;
                 background-color: transparent;
-                border:3px solid $primaryColorBlue;
+                border:3px solid $primaryColor;
                 padding: 15px;
                 cursor: pointer;
 
@@ -54,8 +81,17 @@
 
                 h4{
                     text-transform: uppercase;
-                    color: $primaryColorBlue;
+                    color: $primaryColor;
                     font-size: 20px;
+                }
+
+                ul{
+                    display: flex;
+                    gap: 18px;
+
+                    li{
+                        list-style-type: none;
+                    }
                 }
             }
         }
