@@ -97,6 +97,8 @@
                         v-for="currentComic in comicBook"
                         :comicName="currentComic.series"
                         :comicImage="currentComic.thumb"
+                        :comicPrice="currentComic.price"
+                        :comicType="currentComic.type"
                     ></ComicItem>
                 </div>
             </div>
@@ -111,7 +113,7 @@
     @use '../styles/variables' as *;
 
     #books-comic{
-        height: 700px;
+        height: 730px;
         width: 100%;
         background-color: #1c1c1c;
 
@@ -145,7 +147,7 @@
             #button-load{
                 display: flex;
                 justify-content: center;
-                padding-top: 90px;
+                padding-top: 70px;
 
                 button{
                     padding: 10px 60px;

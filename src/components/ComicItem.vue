@@ -4,7 +4,9 @@
 
         props:{
             comicName: String,
-            comicImage: String
+            comicImage: String,
+            comicPrice: String,
+            comicType: String
         }
     }
 </script>
@@ -12,6 +14,8 @@
 <template>
 
    <div id="single-comic">
+        <span>{{ comicPrice }}</span>
+        <strong>{{ comicType }}</strong>
         <img :src="comicImage" alt="">
         <h4>{{ comicName }}</h4>
     </div>
@@ -30,9 +34,24 @@
         }
 
         h4{
-            text-transform: uppercase;
             font-family: 'Barlow Condensed', sans-serif;
+            text-transform: uppercase;
             font-size: 18px;
+        }
+
+        span{
+            color: $primaryColorBlue;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            top: 190px;
+            right: -120px;
+        }
+
+        strong{
+            text-transform: uppercase;
+            color: $primaryColorBlue;
+            font-size: 15px;
         }
     }
    
