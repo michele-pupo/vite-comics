@@ -100,6 +100,9 @@
                     ></ComicItem>
                 </div>
             </div>
+            <div id="button-load"> 
+                <button>Load more</button>
+            </div>
         </div>
     </div>
 </template>
@@ -108,7 +111,7 @@
     @use '../styles/variables' as *;
 
     #books-comic{
-        height: 750px;
+        height: 700px;
         width: 100%;
         background-color: #1c1c1c;
 
@@ -117,15 +120,17 @@
             margin: 0 auto;
 
             button{
+                font-family: 'Barlow Condensed', sans-serif;
                 position: relative;
                 top: -25px;
                 left: -20px;
                 background-color: $primaryColorBlue;
                 padding: 10px 30px;
                 border: transparent;
-                font-size: 25px;
+                font-size: 28px;
                 text-transform: uppercase;
                 font-weight: bold;
+                cursor: pointer;
             }
                 
             #comics{
@@ -136,7 +141,18 @@
                     gap: 30px;
                 }
             }
-            
+
+            #button-load{
+                display: flex;
+                justify-content: center;
+                padding-top: 90px;
+
+                button{
+                    padding: 10px 60px;
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 </style>

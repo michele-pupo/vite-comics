@@ -81,6 +81,7 @@
 
 <style lang="scss">
     #bg-image{
+        font-family: 'Barlow Condensed', sans-serif;
         height: 370px;
         background-image: url(/public/img/footer-bg.jpg);
         background-size: cover;
@@ -103,6 +104,7 @@
             flex-flow: column wrap;
             align-content: flex-start;
             gap: 20px 30px;
+            padding-top: 20px;
             height: 370px;
 
             h3{

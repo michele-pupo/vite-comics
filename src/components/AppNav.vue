@@ -40,6 +40,7 @@
 
     #navbar{
         background-color: white;
+        font-family: 'Barlow Condensed', sans-serif;
         padding: 20px 0px;
         z-index: 1;
 
@@ -62,7 +63,7 @@
                     &:hover{
                         color: $primaryColorBlue;
                         border-bottom: 8px solid $primaryColorBlue;
-                        padding-bottom: 54px;
+                        padding-bottom: 55px;
                     }
                 }
             }

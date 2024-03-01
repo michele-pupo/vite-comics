@@ -26,7 +26,13 @@
 
         img{
             width: 100%;
-            height: 250px;
+            height: 200px;
+        }
+
+        h4{
+            text-transform: uppercase;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 18px;
         }
     }
    

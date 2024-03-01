@@ -49,12 +49,12 @@
 
    #container-blue-bundles{
         background-color: $primaryColorBlue;
+        font-family: 'Barlow Condensed', sans-serif;
         height: 155px;
         display: flex;
         align-items: center;
 
         #blue-bundles{
-            position: absolute;
             z-index: 10;
             width: 100%;
            
@@ -63,13 +63,13 @@
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
                 gap: 17px;
 
                 #card{
                     display: flex;
                     gap: 17px;
                     height: 55px;
+                    align-items: center;
 
                     img{
                         height: 100%;

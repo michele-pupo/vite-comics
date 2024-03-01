@@ -39,7 +39,7 @@
                 text-transform: uppercase;
                 background-color: transparent;
                 border:3px solid $primaryColorBlue;
-                padding: 0px 15px;
+                padding: 15px;
                 cursor: pointer;
 
                 span{
